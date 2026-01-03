@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env.*
+logs/
+*.log.neon_local
+.neon_local
+logs/
+coverage/
