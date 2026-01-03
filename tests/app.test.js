@@ -14,7 +14,7 @@ describe("API Endpoints", () => {
   describe("GET /api", () => {
     it("should return API running message", async () => {
       const res = await request(app).get("/api").expect(200);
-      expect(res.body).toHaveProperty("message", "Acquisitions API is running.");
+      expect(res.body).toHaveProperty("message", "Kubernetes Demo API is running.");
     });
   });
 

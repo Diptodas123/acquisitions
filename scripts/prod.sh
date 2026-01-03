@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#Production deployment script for Acquisitions app 
+#Production deployment script for Kubernetes Demo API 
 # This script starts the application in production mode with Neon Cloud Database(Postgres).
 
-echo "🚀 Starting Acquisitions app in production mode"
+echo "🚀 Starting Kubernetes Demo API in production mode"
 echo "================================================================"
 
 #Check if .env.production file exists
@@ -40,8 +40,8 @@ npm run db:migrate
 echo ""
 echo "✨ Production environment is up and running!"
 echo "   🌐 Application is accessible at http://localhost:${PORT:-3000}"
-echo "      Logs can be viewed with: docker logs acquisitions-app-prod"
+echo "      Logs can be viewed with: docker logs kubernetes-demo-api-app-prod"
 echo ""
 echo "Useful commands:"
 echo "   🛑 To stop the production environment, run: docker compose -f docker-compose.prod.yml down"
-echo "   📦 To view logs: docker logs -f acquisitions-app-prod"
+echo "   📦 To view logs: docker logs -f kubernetes-demo-api-app-prod"

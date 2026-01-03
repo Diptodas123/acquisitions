@@ -1,5 +1,5 @@
 {
-  "name": "acquisitions",
+  "name": "kubernetes-demo-api",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -31,15 +31,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Diptodas123/acquisitions.git"
+    "url": "git+https://github.com/Diptodas123/kubernetes-demo-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Diptodas123/acquisitions/issues"
+    "url": "https://github.com/Diptodas123/kubernetes-demo-api/issues"
   },
-  "homepage": "https://github.com/Diptodas123/acquisitions#readme",
+  "homepage": "https://github.com/Diptodas123/kubernetes-demo-api#readme",
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.15",
     "@arcjet/node": "^1.0.0-beta.15",

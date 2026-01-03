@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#Development startup script for Acquisitions app with Neon local Postgres
+#Development startup script for Kubernetes Demo API with Neon local Postgres
 #This script starts the application in development mode with Neon local Postgres.
 
-echo "🚀 Starting Acquisitions app in development mode"
+echo "🚀 Starting Kubernetes Demo API in development mode"
 echo "================================================================"
 
 #Check if .env.development file exists

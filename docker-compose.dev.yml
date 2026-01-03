@@ -2,7 +2,7 @@ services:
   # Neon local proxy for development
   neon-local:
     image: neondatabase/neon_local:latest
-    container_name: acquisitions-neon-local
+    container_name: kubernetes-demo-api-neon-local
     ports:
       - "5433:5432"
     env_file:
@@ -17,7 +17,7 @@ services:
       retries: 5
       start_period: 10s
     networks:
-      - acquisitions-dev
+      - kubernetes-demo-api-dev
 
   # Node.js application service for development
   app:
@@ -25,7 +25,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: development
-    container_name: acquisitions-app-dev
+    container_name: kubernetes-demo-api-app-dev
     ports:
       - "${PORT:-3000}:3000"
     env_file:
@@ -38,9 +38,9 @@ services:
       neon-local:
         condition: service_healthy
     networks:
-      - acquisitions-dev
+      - kubernetes-demo-api-dev
     restart: unless-stopped
 
 networks:
-  acquisitions-dev:
+  kubernetes-demo-api-dev:
     driver: bridge
