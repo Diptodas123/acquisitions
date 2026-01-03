@@ -1,88 +1,88 @@
 {
-    "id": "3da6f3d4-4cf2-492a-aee7-4933e9cdfd4b",
-    "prevId": "00000000-0000-0000-0000-000000000000",
-    "version": "7",
-    "dialect": "postgresql",
-    "tables": {
-        "public.users": {
-            "name": "users",
-            "schema": "",
-            "columns": {
-                "id": {
-                    "name": "id",
-                    "type": "serial",
-                    "primaryKey": true,
-                    "notNull": true
-                },
-                "name": {
-                    "name": "name",
-                    "type": "varchar(256)",
-                    "primaryKey": false,
-                    "notNull": true
-                },
-                "email": {
-                    "name": "email",
-                    "type": "varchar(256)",
-                    "primaryKey": false,
-                    "notNull": true
-                },
-                "password": {
-                    "name": "password",
-                    "type": "varchar(256)",
-                    "primaryKey": false,
-                    "notNull": true
-                },
-                "role": {
-                    "name": "role",
-                    "type": "varchar(50)",
-                    "primaryKey": false,
-                    "notNull": true,
-                    "default": "'user'"
-                },
-                "created_at": {
-                    "name": "created_at",
-                    "type": "timestamp",
-                    "primaryKey": false,
-                    "notNull": false,
-                    "default": "now()"
-                },
-                "updated_at": {
-                    "name": "updated_at",
-                    "type": "timestamp",
-                    "primaryKey": false,
-                    "notNull": false,
-                    "default": "now()"
-                }
-            },
-            "indexes": {},
-            "foreignKeys": {},
-            "compositePrimaryKeys": {},
-            "uniqueConstraints": {
-                "users_email_unique": {
-                    "name": "users_email_unique",
-                    "nullsNotDistinct": false,
-                    "columns": ["email"]
-                },
-                "users_password_unique": {
-                    "name": "users_password_unique",
-                    "nullsNotDistinct": false,
-                    "columns": ["password"]
-                }
-            },
-            "policies": {},
-            "checkConstraints": {},
-            "isRLSEnabled": false
+  "id": "3da6f3d4-4cf2-492a-aee7-4933e9cdfd4b",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.users": {
+      "name": "users",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(256)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar(256)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "password": {
+          "name": "password",
+          "type": "varchar(256)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'user'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
         }
-    },
-    "enums": {},
-    "schemas": {},
-    "sequences": {},
-    "roles": {},
-    "policies": {},
-    "views": {},
-    "_meta": {
-        "columns": {},
-        "schemas": {},
-        "tables": {}
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "users_email_unique": {
+          "name": "users_email_unique",
+          "nullsNotDistinct": false,
+          "columns": ["email"]
+        },
+        "users_password_unique": {
+          "name": "users_password_unique",
+          "nullsNotDistinct": false,
+          "columns": ["password"]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
     }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
 }
